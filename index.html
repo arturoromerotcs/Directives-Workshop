@@ -2,6 +2,7 @@
 <html ng-app="directiveWorkshop">
 <head>
 	<title>My Directives</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body ng-controller="mainCtrl">
 
@@ -9,7 +10,8 @@
 <h2>pending</h2>
 	<form>
 		<input ng-model="query" placeholder="Search"/>
-		<button ng-click="getData()">Submit</button> 
+		<button pending request="getData()">Submit</button> 
+		<img class="loading-gif" src="http://cdn0.vox-cdn.com/images/polygon/loader-small.vec8df46.gif" />
 	</form>
 </div>
 
@@ -22,7 +24,6 @@
 		<button ng-click="">Submit</button> 
 	</form>
 </div>
-
 <scripts>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
