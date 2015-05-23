@@ -14,7 +14,7 @@ app.directive('pending', function($log) {
 				
 			element.on('click', function() {
 				element.hide();
-				var loadingGif = element.after( '<img src="http://cdn0.vox-cdn.com/images/polygon/loader-small.vec8df46.gif"></img>' );
+				element.after( '<img src="http://cdn0.vox-cdn.com/images/polygon/loader-small.vec8df46.gif"></img>' );
 				
 				//scope.request === getdata on controller
 				scope.request()
